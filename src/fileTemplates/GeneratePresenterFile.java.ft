@@ -1,0 +1,19 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")
+package ${PACKAGE_NAME}
+;#end
+
+import com.credithc.hengyiying.contract.${NAME}Contract;
+import com.credithc.hengyiying.model.${NAME}Model;
+
+import base.BasePresenter;
+
+
+public class ${NAME}Presenter extends BasePresenter<${NAME}Contract.I${NAME}View,${NAME}Contract.I${NAME}Model> implements ${NAME}Contract.I${NAME}Presenter{
+
+    @Override
+    public ${NAME}Contract.I${NAME}Model bindModel(){
+        return (${NAME}Contract.I${NAME}Model)${NAME}Model.newInstance();
+    }
+
+
+}

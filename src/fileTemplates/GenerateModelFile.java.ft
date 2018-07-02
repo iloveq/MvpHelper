@@ -1,0 +1,15 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import com.credithc.hengyiying.contract.${NAME}Contract;
+
+import base.IBaseModel;
+
+
+public class ${NAME}Model implements ${NAME}Contract.I${NAME}Model{
+
+    public static IBaseModel newInstance(){
+        return new ${NAME}Model();
+    }
+
+
+}
